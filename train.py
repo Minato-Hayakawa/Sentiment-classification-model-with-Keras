@@ -6,3 +6,5 @@ from keras.preprocessing.sequence import pad_sequences
 FilePath='C:/vscode/python/Twitter US Airline Sentiment/Tweets.csv/Tweets.csv'
 
 df=pd.read_csv(FilePath)
+text=df['text'].values
+labels=df['airline_sentiment'].map('positive':0,'neutral':1,'nagetive':2,)
